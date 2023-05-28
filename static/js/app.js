@@ -128,24 +128,7 @@ function updateDemo(selectName) {
         .text(`${key}:${value}`)
         .style("color", "darkblue")
     )}
-)};
-    // for (var k in sampleMeta){
-    //     if (typeof target[k] !== 'function') {
-    //         d3.select(".panel-body").append("h6").text(`${k}:${target[k]}`)}
-    // }
-    // })};
-
-        // })};
-        // for (let i =0; i < data.length; i++){
-        //     d3.select(".panel-body")
-        //     .append("h6")
-        //     .text(`${keys}`)
-        // }
-        
-
-    
-
-        
+)};   
 
 // Call function to update the chart
 function optionChanged(selectName) {
