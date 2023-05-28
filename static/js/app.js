@@ -10,7 +10,7 @@ d3.json(url).then(function(data) {
     console.log(data.names)
     console.log(data.samples);
   });
-//----------------Initialize default display-----------------//
+//---------------------Initialize default display---------------------//
 // Initialize and Display the default plot
 function init(){
     // Create a drop-down menu for each id
@@ -25,24 +25,23 @@ function init(){
         // Select the first array of data for plotting
         let sample1 = nameIds[0]
         console.log(sample1)
-        updateBargraph(sample1)
+        // call plot function to initialize display
+        updatePlotly(sample1)
+        // updateChart(sample1)
     })};
-init()
+
 //-------------------Function called by DOM changes-------------------//
 // On change to the DOM, call getData()
-// d3.selectAll("#selDataset").on("change", updatePlotly);
-
-// // Function called by DOM changes
-// function updatePlotly() {
-//------------Bar Graph-----------------//
-function updateBargraph(selectName) {
+d3.selectAll("#selDataset").on("change", updatePlotly);   
+function updatePlotly(selectName) {
     // Fetch the JSON data
     d3.json(url).then(function(data){
     
     // Filter the id of the selected dropdown option in dataset
     let sampleId = data.samples.filter(select => select.id === selectName)[0]
     console.log(sampleId)
-    
+
+//-----------------------------Bar Graph---------------------------------//    
         let trace1 = {
             x: (sampleId.sample_values).slice(0,10).reverse(),
             y: (sampleId.otu_ids).map(object => `OTU_${object}`).slice(0,10).reverse(),
@@ -74,33 +73,53 @@ function updateBargraph(selectName) {
         };
 
         Plotly.newPlot("bar", traceData, layout);
+  
+
+//------------------------------Bubble Chart------------------------------//
+        let trace2 = {
+            x: sampleId.otu_ids,
+            y: sampleId.sample_values,
+            name: "Distribution of OTUs",
+            mode: "markers",
+            text: (sampleId.otu_labels),
+            orientation: "h",
+            marker: {
+                colorscale: "Orange",
+                size: sampleId.sample_values,
+                color: sampleId.otu_ids
+            },
+            line: {
+                    width: 2.5
+                }
+            
+        };
+        let traceData2 =[trace2];
+
+        // Apply a title to the layout
+        let layout2 = {
+            title: "Distribution of OTUs",
+            margin: {
+                l: 100,
+                r: 100,
+                t: 100,
+                b: 100
+            },
+            xaxis: {title: 'OTU ID'},
+            font: {size: 15}
+            // height: 600,
+            // width: 800
+        };
+
+        Plotly.newPlot("bubble", traceData2, layout2);
     })};
-    // Create a custom function to return players who made the team
-//     function Id(selectId) {return selectId.sample}
-//     // Call the custom function with filter()
-//     data.filter(Id)
-//     // Use D3 to select the dropdown menu
-//     let userselectedId = data.names
-    
-//     let dropdownMenu = d3.select("#selDataset").append("option").property("value", userselectedId).text();
 
-//     if (userselectedId == )
-
-//     // Assign the value of the dropdown menu option to a variable
-//     let dataset = dropdownMenu.property("value");
-// });
-
-//     });
-    
-//         // console.log(dataDemoVal)
-//      
-// // Call function to update the chart
-
-// // On change to the DOM, call getData()
-// d3.selectAll("#selDataset").on("change", getData)
 
 // Call function to update the chart
 function optionChanged(selectName) {
     Plotly.restyle("bar", "values", [selectName])
-    updateBargraph(selectName);
+    updatePlotly(selectName)
+    // Plotly.restyle("bubble", "values", [selectName])
+    // updateChart(selectName)
   };
+
+  init();
