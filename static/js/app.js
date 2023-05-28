@@ -123,21 +123,25 @@ function updatePlots(selectName) {
     type: "indicator",
     title: { text: "<em>Belly Button Washing Freq</em><br>Scrubs per week", font: { size: 24 } },
     mode: "gauge+number",
-    steps: [
-        { range: [0, 1], color: "#f0f5b4" },
-        { range: [2, 3], color: "d4fbb4" },
-        { range: [3, 4], color: "#daf5b4" },
-        { range: [4, 5], color: "#caf5b4" },
-        { range: [5, 6], color: "#c4f5b4" },
-        { range: [6, 7], color: "#bdf5b4" },
-        { range: [7, 8], color: "#b1f5b4" },
-        { range: [8, 9], color: "#8ef5b4" }
+    gauge: {
+        axis: { range: [null, 10]},
+        steps: [
+        { range: [0, 1], color: "#e8f5b4" },
+        { range: [1, 2], color: "#d4fbb4" },
+        { range: [2, 3], color: "#daf5b4" },
+        { range: [3, 4], color: "#caf5b4" },
+        { range: [4, 5], color: "#c4f5b4" },
+        { range: [5, 6], color: "#bdf5b4" },
+        { range: [6, 7], color: "#b1f5b4" },
+        { range: [7, 8], color: "#8ef5b4" },
+        { range: [8, 9], color: "#58f5b4" },
+        { range: [9, 10], color: "#06f5b4" }
       ],
     threshold: {
-        line: { color: "red", width: 4 },
+        line: { color: "red", width: 7 },
         thickness: 0.75,
         value: 9}
-    };
+    }};
     // Data trace array
     let traceData3 =[trace3];
     
