@@ -59,18 +59,22 @@ function updatePlots(selectName) {
     let traceData =[trace1];
 
     // Apply a title to the layout
-    let layout = {
-        title: " Top 10 OTUs ",
-        margin: {
-            l: 100,
-            r: 100,
-            t: 100,
-            b: 100
+    const layout = {
+        title: {
+            display:true,
+            font: { size: 24, color: 'darkred' } ,
+            text: "<br><em>Top 10 OTUs </em>",
+            titleAlign:'right'
+      },
+      margin: {
+                l: 100,
+                r: 100,
+                t: 100,
+                b: 100
         },
-        font: {size: 15},
-        height: 500,
-        width: 700
-    };
+        height: 400,
+        width: 500
+    }
 
     // Render the plot to the div tag with id "bar"
     Plotly.newPlot("bar", traceData, layout);
@@ -97,7 +101,9 @@ function updatePlots(selectName) {
 
     // Apply a title to the layout
     let layout2 = {
-        title: "Distribution of OTUs",
+        title: {display:true,
+            font: { size: 24, color: 'darkred' } ,
+            text: "<br><em>Distribution of OTUs</em>"},
         margin: {
             l: 100,
             r: 100,
@@ -107,7 +113,7 @@ function updatePlots(selectName) {
         xaxis: {title: 'OTU ID'},
         font: {size: 15},
         height: 500,
-        width: 1200
+        width: 1130
     };
     
     // Render the plot to the div tag with id "bubble"
@@ -118,13 +124,16 @@ function updatePlots(selectName) {
     let sampleMeta = data.metadata.filter(select => select.id == selectName)[0]
 
     let trace3 = {
-    domain: { x: [0, 1], y: [0, 1] },
+    // domain: { x: [10, 1], y: [100, 1] },
     value: sampleMeta.wfreq,
     type: "indicator",
-    title: { text: "<em>Belly Button Washing Freq</em><br>Scrubs per week", font: { size: 24 } },
+    title: { text: "<em>Belly Button Washing Freq</em><br>Scrubs per week", 
+        font: { size: 24, color:'darkred' } 
+    },
     mode: "gauge+number",
     gauge: {
-        axis: { range: [null, 10]},
+        axis: { range: [null, 10], tickwidth: 1, tickcolor: "black",tickmode: "linear" },
+        bar: { color: "darkgreen" },
         steps: [
         { range: [0, 1], color: "#e8f5b4" },
         { range: [1, 2], color: "#d4fbb4" },
@@ -136,17 +145,20 @@ function updatePlots(selectName) {
         { range: [7, 8], color: "#8ef5b4" },
         { range: [8, 9], color: "#58f5b4" },
         { range: [9, 10], color: "#06f5b4" }
-      ],
-    threshold: {
-        line: { color: "red", width: 7 },
-        thickness: 0.75,
-        value: 9}
+      ]
+    
     }};
     // Data trace array
     let traceData3 =[trace3];
+
+    let layout3 = {
+        width: 450,
+        height: 400,
+        margin: { t: 25, r: 25, l: 25, b: 25 }
+      };
     
-    // Render the plot to the div tag with id "bubble"
-    Plotly.newPlot("gauge", traceData3)
+    // Render the plot to the div tag with id "gauge"
+    Plotly.newPlot("gauge", traceData3, layout3)
 })};
 
 //------------------------------Demographic Info------------------------------//
