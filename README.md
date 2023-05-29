@@ -1,17 +1,24 @@
 ## Overview
-The belly button is a peculiar habitat that houses a lot of microbes yet it remains unexplored. The Public Science lab in January 2011, undertook a research to investigate the Biodiversity of microbes in the human navel as well as the beneficial roles microbes play in our daily lives. In this project, I built an interactive dashboard to explore the  <a> href = "http://robdunnlab.com/projects/belly-button-biodiversity/">Belly Button Biodiversity datasetLinks<a/>, which catalogs the microbes that colonize human navels.
+The belly button is a peculiar habitat that houses a lot of microbes yet it remains unexplored. The Public Science lab in January 2011, undertook a research to investigate the Biodiversity of microbes in the human navel as well as the beneficial roles microbes play in our daily lives. In this project, I built an interactive dashboard to explore the  <a href ="http://robdunnlab.com/projects/belly-button-biodiversity/">Belly Button Biodiversity datasetLinks</a>, which catalogs the microbes that colonize human navels.
 
 ## Dependencies used
-<img width="120" src = https://user-images.githubusercontent.com/107348074/236379504-0f0e8534-6435-4924-b72d-283946e03c4b.png>
-<img width="120" src = https://user-images.githubusercontent.com/107348074/236379877-e0e3b90e-217f-4700-ade2-df8b5ef8f23b.png>
-<img width="120" src =https://user-images.githubusercontent.com/107348074/236379730-0286f397-c9e0-4e0c-a91c-e07d64f6ceec.png>
-<img width="120" src = https://user-images.githubusercontent.com/107348074/236379825-80dc02bc-46c1-46fa-9634-dc28cdcb5704.png>
+![D3](https://img.shields.io/badge/d3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)
 
 ## Summary of Dataset
-The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. The <a> href = "https://github.com/Jayplect/belly-button-dashboard/tree/main/data">samples.json<a/> file was not accessed locally but it is provided for reference.
+The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. The <a href = "https://github.com/Jayplect/belly-button-dashboard/tree/main/data">samples.json</a> file was not accessed locally but it is provided for reference.
 
 ## Project Steps
-### Step 1: Merging both data sets 
+### Step 1: Create Horizontal bar chart 
+Use the D3 library to read in samples.json from the <a href ="https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json"> URL</a>
+
+Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+
+Use sample_values as the values for the bar chart.
+
+Use otu_ids as the labels for the bar chart.
+
+Use otu_labels as the hovertext for the chart.
 
 ### Step 2: Summary Statistics 
 
