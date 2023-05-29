@@ -1,7 +1,7 @@
 ## Overview
 The belly button is a peculiar habitat that houses a lot of microbes yet it remains unexplored. The Public Science lab in January 2011, undertook a research to investigate the Biodiversity of microbes in the human navel as well as the beneficial roles microbes play in our daily lives. In this project, I built an interactive dashboard to explore the  <a href ="http://robdunnlab.com/projects/belly-button-biodiversity/">Belly Button Biodiversity datasetLinks</a>, which catalogs the microbes that colonize human navels.
 
-## Dependencies used
+## Tools Used
 ![D3](https://img.shields.io/badge/d3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)
 
@@ -19,6 +19,9 @@ Use sample_values as the values for the bar chart.
 Use otu_ids as the labels for the bar chart.
 
 Use otu_labels as the hovertext for the chart.
+
+![image](https://github.com/Jayplect/belly-button-dashboard/assets/107348074/9e989a24-0723-41be-9fba-17d6e16d3316)
+
 
 ### Step 2: Summary Statistics 
 
