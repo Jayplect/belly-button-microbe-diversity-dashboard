@@ -13,7 +13,7 @@ Firstly, I created an app that renders data dynamically to the dashboard upon re
 
 - Fig 1: Horizontal bar chart display of the Top 10 OTU. The sample values represent the y-axis for the bar chart. While the OTU ids served as the labels for the bar chart. I also added a chart feature that allows hovertext for the OTU labels.
 
-<img width="201" alt="image" src="https://github.com/Jayplect/belly-button-microbe-diversity-dashboard/assets/107348074/17cdd767-4ef0-49bb-ac93-cfa1ff33bce9">
+![image](https://github.com/Jayplect/belly-button-microbe-diversity-dashboard/assets/107348074/03c954db-3d5f-44d4-b700-6efe89c16041)
 
 - Fig 2: Bubble chart showing the distribution of OTU in an individual. The OTU ids and sample values served as the x values and y values respectively. The sample values represent the marker size while the OTU ids (i.e., the composition of bacteria) served as the the marker colors. Again, I also added a chart feature that allows hovertext for the OTU labels.
 
@@ -24,7 +24,7 @@ Firstly, I created an app that renders data dynamically to the dashboard upon re
 ![image](https://github.com/Jayplect/belly-button-microbe-diversity-dashboard/assets/107348074/aa3657cc-67aa-4dfe-a679-81ad217d54d1)
 
 - Fig 4: The sample metadata, i.e., an individual's demographic information.
-- 
+ 
 ![image](https://github.com/Jayplect/belly-button-microbe-diversity-dashboard/assets/107348074/698e6ed9-3d83-49c4-9e4a-453fe85d1208)
 
 - Fig 5: Dashboard to explore the microbes in a selected individual's belly button 
