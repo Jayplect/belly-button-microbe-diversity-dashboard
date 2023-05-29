@@ -4,6 +4,7 @@ The belly button is a peculiar habitat that houses a lot of microbes yet it rema
 ## Tools Used
 ![D3](https://img.shields.io/badge/d3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## Summary of Dataset
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. The <a href = "https://github.com/Jayplect/belly-button-dashboard/tree/main/data">samples.json</a> file was not accessed locally but it is provided for reference.
