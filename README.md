@@ -27,11 +27,12 @@ Firstly, I created an app that renders data dynamically to the dashboard upon re
  
 ![image](https://github.com/Jayplect/belly-button-microbe-diversity-dashboard/assets/107348074/698e6ed9-3d83-49c4-9e4a-453fe85d1208)
 
-- Fig 5: Dashboard to explore the microbes in a selected individual's belly button 
+- Fig 5: Dashboard to explore the microbes in a selected individual's belly button
+
 ![image](https://github.com/Jayplect/belly-button-microbe-diversity-dashboard/assets/107348074/04597161-37b9-4e2a-9856-02c49ca6428a)
 
 ## Deployment of Dashboard 
-I deployed my app to a free static page hosting service. <a href = "https://jayplect.github.io/belly-button-microbe-diversity-dashboard/">Click here<a/> to view.
+I deployed my app to a free static page hosting service. <a href = "https://jayplect.github.io/belly-button-microbe-diversity-dashboard/">Click here<a/> to view. For best experience open dashboard with full view.
 
 ## References
 Hulcr, J. et al. (2012) A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable. Retrieved from: http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/Links.
