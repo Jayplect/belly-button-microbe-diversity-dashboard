@@ -1,9 +1,5 @@
-# belly-button-challenge
-
-You will not be required to access the samples.json file locally, but it is provided for reference.
-
-## Description
-
+## Overview
+The belly button is a peculiar habitat that houses a lot of microbes yet it remains unexplored. The Public Science lab in January 2011, undertook a research to investigate the Biodiversity of microbes in the human navel as well as the beneficial roles microbes play in our daily lives. In this project, I built an interactive dashboard to explore the  <a> href = "http://robdunnlab.com/projects/belly-button-biodiversity/">Belly Button Biodiversity datasetLinks<a/>, which catalogs the microbes that colonize human navels.
 
 ## Dependencies used
 <img width="120" src = https://user-images.githubusercontent.com/107348074/236379504-0f0e8534-6435-4924-b72d-283946e03c4b.png>
@@ -12,6 +8,7 @@ You will not be required to access the samples.json file locally, but it is prov
 <img width="120" src = https://user-images.githubusercontent.com/107348074/236379825-80dc02bc-46c1-46fa-9634-dc28cdcb5704.png>
 
 ## Summary of Dataset
+The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. The <a> href = "https://github.com/Jayplect/belly-button-dashboard/tree/main/data">samples.json<a/> file was not accessed locally but it is provided for reference.
 
 ## Project Steps
 ### Step 1: Merging both data sets 
