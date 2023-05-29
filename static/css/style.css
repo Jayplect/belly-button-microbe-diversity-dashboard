@@ -1,0 +1,14 @@
+body{
+    padding: 20px;
+    background-color: hsl(144, 24%, 84%);
+};
+#gauge {
+    padding-top: 10px;
+    
+}
+.child {
+    padding: 20px;
+    padding-top: 10px;
+}
+.font {
+    font-family: "Lucida Console", "Courier New", monospace}
