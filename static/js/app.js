@@ -8,7 +8,8 @@ const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/
 d3.json(url).then(function(data) {
     console.log(data)
     console.log(data.names)
-    console.log(data.samples);
+    console.log(data.samples)
+    console.log(data.metadata);
   });
 //---------------------Initialize default display---------------------//
 // Initialize and Display the default plot
@@ -24,8 +25,8 @@ function init(){
     });
         // Select the first array of data for plotting
         let sample1 = nameIds[0]
-        console.log(sample1)
-        // call plot function to initialize display
+        // call both plot and demographic function to ...
+        // chart and display demographic info for first sample resp.
         updatePlots(sample1)
         updateDemo(sample1)
  })};
@@ -187,4 +188,5 @@ function optionChanged(selectName) {
     updateDemo(selectName)
   };
 
+// initialize the default display
   init();
